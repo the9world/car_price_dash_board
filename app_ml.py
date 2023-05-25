@@ -33,10 +33,12 @@ def run_app_ml():
         print( round( y_pred[0] ) ) # 반올림
         price = ( round( y_pred[0] ) )
         
-        # st.text(f'{y_pred:.2f}달러짜리 차량 구매 가능합니다.') # 이거 안되는 듯?
         # st.text(str(price) + '달러짜리 차량 구매 가능합니다.')
         # st.text('{}달러 짜리 차량 구매 가능합니다.').format(y_pred)
-        st.text(f"{int(y_pred)}달러 짜리 차량 구매 가능합니다.")
+        # st.text(f'{y_pred[0]: .1f}달러짜리 차량 구매 가능합니다.')
+        st.text(f"{int(y_pred[0])}달러 짜리 차량 구매 가능합니다.")
+        
         # price는 round(반올림) 해서 int없어도 됨, y_pred는 int 필요 
-    
-    # 버튼을 누르면 예측한 금액을 표시한다.
+        # y_pred는 지금은 리스트에 데이터가 1개니까 인덱스도 1개라 ㄱㅊ지만
+        # 나중에 유저들 입력이 늘어나서 list내에 데이터 여러개가 되면 인덱스로 불러아햠
+        
