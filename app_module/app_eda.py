@@ -18,7 +18,7 @@ def run_app_eda():
     
     st.subheader('최대 / 최소 데이터 확인하기')
     # st.selectbox('컬럼을 선택하세요', df.columns) # 문자열 컬럼 제외 해야함
-    column = st.selectbox('컬럼을 선택하세요', df.columns[ 3 : ] )
+    column = st.selectbox('컬럼을 선택하세요', df.columns[ 4 : ] )
 
     st.success('최대 데이터') # 유저가 선택한 컬럼의 최소, 최대 값을 보여줌
     st.dataframe( df.loc[df[column]== df[column].max(), ] )    
