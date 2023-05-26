@@ -37,6 +37,7 @@ def run_app_ml():
         # st.text('{}달러 짜리 차량 구매 가능합니다.').format(y_pred)
         # st.text(f'{y_pred[0]: .1f}달러짜리 차량 구매 가능합니다.')
         st.text(f"{int(y_pred[0])}달러 짜리 차량 구매 가능합니다.")
+        print(st.text(f"{int(y_pred[0])}달러 짜리 차량 구매 가능합니다."))
         
         # price는 round(반올림) 해서 int없어도 됨, y_pred는 int 필요 
         # y_pred는 지금은 리스트에 데이터가 1개니까 인덱스도 1개라 ㄱㅊ지만
