@@ -9,5 +9,3 @@ def run_app_home():
     st.text('데이터 분석도 가능하고, 고객 정보를 넣으면 구매 차량 가격도 예측합니다.')
     img_url= 'https://www.motorgraph.com/news/photo/201905/22564_72789_5839.jpg'
     st.image(img_url)
-    
-    
