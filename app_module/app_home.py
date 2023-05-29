@@ -1,7 +1,7 @@
 import streamlit as st
 
 def run_app_home():
-    st.subheader('안녕하세요, 감사해요, 잘 있어요, 다시 만나요')
+    st.subheader('안녕하세요, 감사해요, 잘 있어요, 다시 만나요, 나가주세요')
     st.text('좋은 서비스를 제공하겠습니다.')
     st.text('자동 배포 처리된 앱입니다.')
     
